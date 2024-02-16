@@ -1,0 +1,614 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'inter', sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  background: url(/assets/img/White-stones.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  flex: 100%;
+  flex-flow: column;
+}
+
+.nav {
+  top: 0;
+  height: 8vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(231, 231, 231);
+}
+
+.nav>.nav-header>.nav-title {
+  width: 4vw;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+/* Hero section css */
+
+.hero-text {
+  padding-top: 30vh;
+  line-height: 10vh;
+  align-self: center;
+}
+
+.hero-text h1 {
+  font-size: 6em;
+  font-weight: 900;
+  padding: 0px;
+  width: 100vw;
+  color: #333;
+  text-align: center;
+}
+
+.hero-text p {
+  margin-top: -30px;
+  line-height: 2vh;
+  text-align: center;
+}
+
+
+/* Introduction section */
+.intro-section {
+  width: 100vw;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-flow: column;
+}
+
+.intro-section>h1 {
+  padding: 5vh 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+/* item container 1 and 2 */
+.item1-container {
+  display: flex;
+  align-items: center;
+  padding: 0vh 18vw 5vh 18vw;
+  gap: 50px;
+}
+
+.item2-container {
+  display: flex;
+  align-items: center;
+  padding: 5vh 18vw;
+  gap: 50px;
+}
+
+.item3-container {
+  display: flex;
+  align-items: center;
+  padding: 5vh 18vw;
+  gap: 50px;
+}
+
+/* Item left css */
+.item-left {
+  flex: 100%;
+  padding: 0 25px;
+}
+
+.item-left h1>span {
+  font-size: .5em;
+  font-weight: 300;
+  color: cornflowerblue;
+}
+
+.item-left p {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 3vh;
+}
+
+.item-left b {
+  color: cornflowerblue
+}
+
+.item-left>img {
+  width: 30vw;
+}
+
+/* Item rightcss */
+.item-right {
+  flex: 100%;
+  padding: 0 10px;
+}
+
+.item-right>img {
+  width: 30vw;
+}
+
+.item-right p {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 3vh;
+}
+
+.cards-title h1 {
+  text-align: center;
+  padding: 3vh 0 0 0;
+  font-weight: 200;
+}
+
+/* Vcard css */
+.Vcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 20vw;
+  gap: 20vw;
+  background-color: #333;
+}
+
+.content {
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.content p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2.4vh;
+  width: 30vw;
+}
+
+.scanCode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.scanCode p {
+  font-size: .8em;
+  font-weight: 300;
+}
+
+.scanCode a {
+  text-decoration: none;
+  background: cornflowerblue;
+  color: #fff;
+  font-weight: 200;
+  padding: 1vh 2vw;
+  border-radius: 5%;
+}
+
+.scanCode a:hover {
+  color: #333;
+  background: #fff;
+  transition: all ease-in-out .5s;
+}
+
+
+footer {
+  text-align: center;
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width:600px) {
+  .nav {
+    height: 9vh;
+    background-color: #eee;
+    z-index: 4;
+  }
+
+  .nav>.nav-header>.nav-title {
+    width: 20vw;
+    padding: 0px;
+  }
+
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000000;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 10px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #eee;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  /* Hero section content*/
+  header {
+    height: 80vh;
+  }
+
+  header .hero-text {
+    padding-top: 20vh;
+    line-height: 4vh;
+  }
+
+  .hero-text>h1 {
+    font-size: 2.2em;
+    padding: 10px;
+  }
+
+  .hero-text>p {
+    font-size: 1.1em;
+    padding: 20px;
+    line-height: 3vh;
+    font-weight: 200;
+  }
+
+  /* Intro section css */
+  .intro-section>h1 {
+    padding: 2vh 0;
+  }
+
+  .item1-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  .item2-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .item3-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  /* Item left css */
+  .item-left {
+    flex: 100%;
+    padding: 10px;
+  }
+
+  .item-left h1>span {
+    font-size: .5em;
+    font-weight: 300;
+  }
+
+  .item-left h1 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .item-left p {
+    font-size: .8em;
+    font-weight: 300;
+    line-height: 2vh;
+    text-align: justify;
+  }
+
+  .item-left img {
+    width: 75vw;
+  }
+
+  /* Item rightcss */
+  .item-right {
+    flex: 100%;
+    padding: 0 8px;
+  }
+
+  .item-right img {
+    width: 90vw;
+    padding: 0;
+  }
+
+  .item-right p {
+    font-size: .8em;
+    font-weight: 300;
+    line-height: 2vh;
+    text-align: justify;
+  }
+
+  /* Portfolios section */
+  .portfolios {
+    padding-top: 10vh;
+  }
+
+  /* Get in touch */
+
+  .Vcontainer {
+    margin-top: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 100%;
+  }
+
+  .content h1 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 2.4vh;
+    width: 80vw;
+    text-align: justify;
+  }
+
+  .scanCode {
+    flex: 100%;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .scanCode a {
+    width: 50vw;
+  }
+
+  footer {
+    font-size: .8em;
+  }
+
+}
+
+/* Css cards for portfolios */
+.portfolios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2vh;
+  height: 55vh;
+}
+
+.cardContainer {
+  position: relative;
+  width: 300px;
+  height: 430px;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 4px;
+  perspective: 1000px;
+}
+
+.active {
+  transform: translateZ(0px) rotateY(180deg) !important;
+}
+
+.active:after {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  /* backface-visibility: hidden; */
+  /* -moz-backface-visibility: hidden; */
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 14px 50px -4px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1.4);
+}
+
+.card:hover {
+  transform: translateZ(0px);
+}
+
+.card:hover:after {
+  opacity: 1;
+}
+
+.card .side {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card .front {
+  z-index: 2;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card .info {
+  padding: 16px;
+}
+
+.front .img {
+  background-color: #dadce2;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 250px;
+}
+
+.front .img1 {
+  background-image: url(/assets/img/abstract-colorful-splash-3d-background-generative-ai-background.jpg);
+}
+
+.front .img2 {
+  background-image: url(/assets/img/representation-user-experience-interface-design.jpg);
+}
+
+.front .img3 {
+  background-image: url(/assets/img/1363.jpg);
+}
+
+.back {
+  position: relative;
+}
+
+.back h2 {
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.back .reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.back .reviews p {
+  color: #c4c4c4;
+  font-weight: 300;
+  margin: 1px 0 0 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.back .reviews:hover p {
+  color: #555;
+}
+
+.back li {
+  line-height: 22px;
+  margin: 2px 0 6px 0;
+}
+
+.back .btn {
+  position: absolute;
+  bottom: 16px;
+  width: calc(100% - 32px);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #101010;
+  background: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back .btn:hover h4 {
+  transform: translateX(0px);
+}
+
+.back .btn:hover svg {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.back .btn h4 {
+  transform: translateX(12px);
+  transition: transform 0.3s ease-out;
+}
+
+.back .btn svg {
+  margin: 1px 0 0 4px;
+  transform: translateX(-8px);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+/* Close  */

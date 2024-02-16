@@ -1,0 +1,81 @@
+body {
+  background: rgb(21, 21, 21);
+  display: flex;
+  justify-content: space-around;
+  padding: 10vh;
+  font-family: 'inter', sans-serif;
+}
+.vProfile {
+  display: flex;
+  flex-flow: column;
+  border-radius: 5%;
+   color:#fff; 
+}
+.profile-image {
+  display: flex;
+  flex-flow: column;
+  padding: 5vh 5vw 0 5vw; 
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  align-items: center; 
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.profile-image h2 {
+  color:#ffffff;
+}
+.profile-image img {
+  background: #eee;
+  border-radius: 100%;
+  border: #fff solid 3px;
+}
+.contact-options {
+  display: flex;
+  flex-flow: row;
+  gap:2vw;
+  padding: 3vh 0;
+  background-color: #fff;
+}
+.social-links {
+  display: flex;
+  flex-flow: row;
+  gap:2vw;
+  padding: 0vh  3vh;
+  background: #fff;
+}
+.social-links a {
+  padding: 2vh 0;
+}
+.contact-options,  .social-links, a {
+  justify-content: center;
+}
+.social-title p {
+  text-align: center;
+  font-size: .8em;
+}
+.footer p {
+  font-size: .7em;
+  text-align: center;
+  font-weight: 100;
+  padding: .8vh 0;
+  background-color: #8E2DE2;
+  color:#fff;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+@media (max-width:600px) {
+  .profile-image {
+    width: 25vw;
+    padding: 5vh 30vw 0 30vw;
+  }
+  .profile-image h2 {
+    font-size: 1.2em;
+    text-align: center;
+    width: 85vw;
+    font-weight: 100;
+  }
+  .contact-options, .social-links {
+    gap:6vw;
+  }
+}

@@ -237,7 +237,7 @@ footer {
 
 @media (max-width:600px) {
   .nav {
-    height: 9vh;
+    height: 10vh;
     background-color: #eee;
     z-index: 4;
   }
@@ -359,14 +359,15 @@ footer {
   }
 
   .item-left h1 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     width: 100%;
+    text-align: center;
   }
 
   .item-left p {
-    font-size: .8em;
+    font-size: 1.1em;
     font-weight: 300;
-    line-height: 2vh;
+    line-height: 3vh;
     text-align: justify;
   }
 
@@ -386,9 +387,9 @@ footer {
   }
 
   .item-right p {
-    font-size: .8em;
+    font-size: 1.1em;
     font-weight: 300;
-    line-height: 2vh;
+    line-height: 3vh;
     text-align: justify;
   }
 
@@ -400,7 +401,7 @@ footer {
   /* Get in touch */
 
   .Vcontainer {
-    margin-top: 110vh;
+    margin-top: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,9 +419,9 @@ footer {
   }
 
   .content p {
-    font-size: .9em;
+    font-size: 1.1em;
     font-weight: 300;
-    line-height: 2.4vh;
+    line-height: 3vh;
     width: 80vw;
     text-align: justify;
   }

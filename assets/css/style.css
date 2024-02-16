@@ -22,8 +22,11 @@ header {
   background-position-y: center;
   background-size: cover;
   display: flex;
-  flex: 100%;
   flex-flow: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav {
@@ -34,8 +37,10 @@ header {
   z-index: 1;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 20px;
   background-color: rgb(231, 231, 231);
 }
@@ -68,15 +73,14 @@ header {
 /* Hero section css */
 
 .hero-text {
-  padding-top: 30vh;
+  padding-top: 0vh;
   line-height: 10vh;
-  align-self: center;
 }
 
 .hero-text h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: 900;
-  padding: 0px;
+  padding: 0px 20vw;
   width: 100vw;
   color: #333;
   text-align: center;
@@ -179,7 +183,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5vh 20vw;
-  gap: 20vw;
+  gap: 10vw;
   background-color: #333;
 }
 
@@ -243,7 +247,7 @@ footer {
   }
 
   .nav>.nav-header>.nav-title {
-    width: 20vw;
+    width: 18vw;
     padding: 0px;
   }
 
@@ -302,17 +306,183 @@ footer {
   }
 
   header .hero-text {
-    padding-top: 20vh;
+    padding-top: 0vh;
     line-height: 4vh;
   }
 
   .hero-text>h1 {
-    font-size: 2.2em;
+    font-size: 2em;
+    width: 100vw;
     padding: 10px;
   }
 
   .hero-text>p {
-    font-size: 1.1em;
+    font-size: .9em;
+    padding: 25px;
+    line-height: 1.5;
+    font-weight: 200;
+  }
+
+  /* Intro section css */
+  .intro-section>h1 {
+    padding: 2vh 0;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .item1-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  .item2-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .item3-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  /* Item left css */
+  .item-left {
+    flex: 100%;
+    padding: 10px;
+  }
+
+  .item-left h1>span {
+    font-size: .5em;
+    font-weight: 300;
+  }
+
+  .item-left h1 {
+    font-size: 1.5em;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  .item-left p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 3vh;
+  }
+
+  .item-left img {
+    width: 75vw;
+  }
+
+  /* Item rightcss */
+  .item-right {
+    flex: 100%;
+    padding: 0 8px;
+  }
+
+  .item-right img {
+    width: 90vw;
+    padding: 0;
+  }
+
+  .item-right h1 {
+    font-size: 1.5em;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  .item-right p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 3vh;
+  }
+
+  /* Portfolios section */
+  .portfolios {
+    padding-top: 10vh;
+  }
+
+  .cards-title h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  /* Get in touch */
+
+  .Vcontainer {
+    margin-top: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 100%;
+  }
+
+  .content h1 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80vw;
+    /* text-align: justify; */
+  }
+
+  .scanCode {
+    flex: 100%;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .scanCode a {
+    width: 50vw;
+  }
+
+  footer {
+    font-size: .8em;
+  }
+
+}
+
+/* media queries for tablets */
+@media (min-width:769px) and (max-width:1024) {
+
+  .nav {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: stretch;
+    padding: 20px;
+    background-color: rgb(231, 231, 231);
+  }
+
+  .hero-text h1 {
+    font-size: 4em;
+    padding: 0 10vw;
+  }
+
+  .hero-text>p {
+    font-size: 1em;
     padding: 20px;
     line-height: 3vh;
     font-weight: 200;
@@ -321,6 +491,7 @@ footer {
   /* Intro section css */
   .intro-section>h1 {
     padding: 2vh 0;
+    width: 100vw;
   }
 
   .item1-container {

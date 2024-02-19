@@ -1,5 +1,4 @@
-@import url('/assets/css/navbar.css');
-@import url('/assets/css/media-queries.css');
+@import 'navbar.css';
 
 :root {
   font-family: 'Inter', sans-serif;
@@ -381,3 +380,223 @@ footer {
 }
 
 /* Close  */
+/* Media queries */
+
+@media (max-width:600px) {
+  .nav {
+    height: 10vh;
+    background-color: #eee;
+    z-index: 4;
+  }
+
+  .nav>.nav-header>.nav-title {
+    width: 18vw;
+    padding: 0px;
+  }
+
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000000;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 10px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 72px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #eee;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  /* Hero section content*/
+  header {
+    height: 80vh;
+  }
+
+  header .hero-text {
+    padding-top: 0vh;
+    line-height: 4vh;
+  }
+
+  .hero-text>h1 {
+    font-size: 2em;
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .hero-text>p {
+    font-size: .9em;
+    padding: 25px;
+    line-height: 1.5;
+    font-weight: 200;
+  }
+
+  /* Intro section css */
+  .intro-section>h1 {
+    padding: 2vh 0;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .item1-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  .item2-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .item3-container {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+
+  /* Item left css */
+  .item-left {
+    flex: 100%;
+    padding: 10px;
+  }
+
+  .item-left h1>span {
+    font-size: .5em;
+    font-weight: 300;
+  }
+
+  .item-left h1 {
+    font-size: 1.5em;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  .item-left p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 3vh;
+  }
+
+  .item-left img {
+    width: 75vw;
+  }
+
+  /* Item rightcss */
+  .item-right {
+    flex: 100%;
+    padding: 0 8px;
+  }
+
+  .item-right img {
+    width: 90vw;
+    padding: 0;
+  }
+
+  .item-right h1 {
+    font-size: 1.5em;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  .item-right p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 3vh;
+  }
+
+  /* Portfolios section */
+  .portfolios {
+    padding-top: 10vh;
+  }
+
+  .cards-title h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  /* Get in touch */
+
+  .Vcontainer {
+    margin-top: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 100%;
+  }
+
+  .content h1 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80vw;
+    /* text-align: justify; */
+  }
+
+  .scanCode {
+    flex: 100%;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .scanCode a {
+    width: 50vw;
+  }
+
+  footer {
+    font-size: .8em;
+  }
+
+}

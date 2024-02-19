@@ -26,7 +26,7 @@ body {
 }
 
 header {
-  background: url(/assets/img/White-stones.jpg);
+  background: url(/assets/img/White-stones.webp);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -300,15 +300,15 @@ footer {
 }
 
 .front .img1 {
-  background-image: url(/assets/img/abstract-colorful-splash-3d-background-generative-ai-background.jpg);
+  background-image: url(/assets/img/colorsplash.webp);
 }
 
 .front .img2 {
-  background-image: url(/assets/img/representation-user-experience-interface-design.jpg);
+  background-image: url(/assets/img/Ui:ux.webp);
 }
 
 .front .img3 {
-  background-image: url(/assets/img/1363.jpg);
+  background-image: url(/assets/img/DevOps.webp);
 }
 
 .back {

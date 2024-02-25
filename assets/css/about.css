@@ -1,4 +1,5 @@
 @import '/assets/css/navbar.css';
+@import '/assets/css/Desktop.css';
 
 * {
   box-sizing: border-box;
@@ -23,61 +24,52 @@ body {
 
 .profileSection {
   width: 100vw;
-  background: url('/assets/img/White-stones.webp');
+  /* background: url('/assets/img/White-stones.webp'); */
   background-size: cover;
   background-position: 100% 70%;
-  height: auto;
   padding: 0 25vw;
   display: flex;
   flex-flow: row;
+  margin-top: 10vh;
+  color: #fff;
 }
 
-
 .profileSection .info {
-  width: 50%;
+  flex: 100%;
+  width: 50vw;
+  background-color: #333;
   display: flex;
-  flex-flow: row;
-  margin-top: 25vh;
-  color: #333;
+  flex-flow: column;
+  padding: 2vh 2vw;
 }
 
 .profileSection .scanCode {
-  width: 50%;
+  flex: 100%;
+  width: 50vw;
+  background-color: #333;
   display: flex;
   flex-flow: column;
-  margin-top: 25vh;
-  padding: 1vh 0vw;
-  gap: 10px;
-  align-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.733);
-  border-bottom: 1px solid #33333325;
+  gap: 10px;
+  padding: 2vh 2vw;
 }
 
-.scanCode img {
-  border: 2px solid #fff;
-}
-
-.info .details {
-  flex: 100%;
-  background-color: rgba(255, 255, 255, 0.733);
-  width: 100%;
-  height: 200px;
-  padding: 2vh 0vw 3vh 2vw;
-  border-bottom: 1px solid #33333325;
-}
-
-.info .username {
-  font-size: 1.3rem;
+.details .username {
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 1vh 0 0 0;
+  padding: 3vh 0 .5vh 0;
 }
 
-.profileSection p {
+.details p {
   font-size: .8rem;
   font-weight: 300;
-  margin: 0;
+  margin: 0vh 0 0 0;
   padding: 4px 0;
+}
+
+.details .roles {
+  font-size: .9rem;
+  font-weight: 400;
 }
 
 .info .downloadText {
@@ -86,20 +78,16 @@ body {
   padding: 1vh 0;
 }
 
-.info .roles {
-  font-size: .9rem;
-  font-weight: 500;
-}
-
 .info a {
   text-decoration: none;
   cursor: pointer;
   font-size: .6rem;
   font-weight: 500;
   padding: 8px 15px;
-  background: #333;
-  color: #fff;
+  background: #f7f7f7;
+  color: #333;
   border-radius: 20px;
+  margin: 0 5px 0 0;
 }
 
 .info a:hover {
@@ -108,14 +96,15 @@ body {
   transition: all linear .5s;
 }
 
+
 .scanCode a {
   text-decoration: none;
   cursor: pointer;
   font-size: .6rem;
   font-weight: 500;
   padding: 8px 15px;
-  background: #333;
-  color: #fff;
+  background: #f6f6f6;
+  color: #333;
   border-radius: 20px;
 }
 
@@ -125,7 +114,9 @@ body {
   transition: all linear .5s;
 }
 
+
 /* Tabs css */
+
 .tab-wrap {
   width: 50%;
   position: relative;
@@ -228,7 +219,7 @@ input[type=radio][name=tabs]:first-of-type:checked~.slide {
 
 b {
   color: crimson;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* work css */
@@ -304,7 +295,6 @@ li span {
 
 .creativeSuite {
   width: 100%;
-
 }
 
 .creativeSuite img {
@@ -331,67 +321,5 @@ li span {
     width: 80%;
     margin-left: 10%;
     /* top: -106px; */
-  }
-}
-
-/* Media queries */
-
-@media (max-width:800px) {
-
-  /* Content */
-  .profileSection {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-flow: column;
-    background: none;
-  }
-
-  .profileSection .info {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    margin-top: 10vh;
-    color: #333;
-    padding: 0 10vw;
-  }
-
-  .profileSection .scanCode {
-    width: 100%;
-    margin-top: 0vh;
-    padding: 2vh 0vw;
-    gap: 10px;
-    align-content: center;
-    align-items: center;
-  }
-
-
-  /* Tabs  */
-  .stickers {
-    font-size: .7rem;
-    margin: 0 10px 0 0;
-    cursor: pointer;
-  }
-
-  .tab-label-content .tab-content {
-    top: 60px;
-    left: 0px;
-    right: 0px;
-    display: none;
-
-  }
-
-  .tab-content p {
-    font-size: .8rem;
-  }
-
-  .slide {
-    background: crimson;
-    width: calc(100% / 4);
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: calc(85% - 2px);
-    transition: left 0.3s ease-out;
   }
 }

@@ -382,66 +382,7 @@ footer {
 /* Close  */
 /* Media queries */
 
-@media (max-width:600px) {
-  .nav {
-    height: 10vh;
-    background-color: #eee;
-    z-index: 4;
-  }
-
-  .nav>.nav-header>.nav-title {
-    width: 18vw;
-    padding: 0px;
-  }
-
-  .nav>.nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
-
-  .nav>.nav-btn>label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-  }
-
-  .nav>.nav-btn>label>span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #000000;
-  }
-
-  .nav>.nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 10px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 72px;
-    left: 0px;
-  }
-
-  .nav>.nav-links>a {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    color: #eee;
-  }
-
-  .nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
-  }
-
-  .nav>#nav-check:checked~.nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+@media screen and (max-width:800px) {
 
   /* Hero section content*/
   header {

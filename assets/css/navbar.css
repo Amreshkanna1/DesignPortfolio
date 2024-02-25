@@ -41,7 +41,7 @@
 
 /* Media queries */
 
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
   .nav {
     height: 10vh;
     /* background-color: #eee; */
